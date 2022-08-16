@@ -12,4 +12,8 @@ describe 'make_snippet method' do
   it 'returns "We had a great time." when passed "We had a great time."' do
     expect(make_snippet("We had a great time.")).to eq "We had a great time."
   end
+
+  it 'returns "Hi, I am Yichao" when passed "Hi, I am Yichao"' do
+    expect(make_snippet("Hi, I am Yichao")).to eq "Hi, I am Yichao"
+  end
 end
