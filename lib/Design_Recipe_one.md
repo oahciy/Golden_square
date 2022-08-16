@@ -25,7 +25,47 @@ _Make a list of examples of what the method will take and return._
 reading_time("") => "There is nothing to read."
 reading_time("one") => "Your reading time is 0 minute(s) 0.3 second(s)"
 reading_time("one two") => "Your reading time is 0 minute(s) 0.6 second(s)"
+reading_time("Once upon there was a prince who was very unhappy. He had not slept in days.") => "Your reading time is 0 minute(s) 4.8 second(s)"
+reading_time("1. Strophe
+Hänsel und Gretel verliefen sich im Wald.
+Es war so finster und auch so bitter kalt.
+Sie kamen an ein Häuschen von Pfefferkuchen fein.
+Wer mag der Herr wohl von diesem Häuschen sein?
 
+2. Strophe 
+Hu, hu, da schaut eine alte Hexe raus!
+Lockte die Kinder ins Pfefferkuchenhaus.
+Sie stellte sich gar freundlich, o Hänsel, welche Not!
+Ihn wollt’ sie braten im Ofen braun wie Brot.
+
+3. Strophe
+Doch als die Hexe zum Ofen schaut hinein,
+ward sie gestoßen von unserm Gretelein.
+Die Hexe musste braten, die Kinder geh’n nach Haus.
+Nun ist das Märchen von Hans und Gretel aus.
+
+1. Strophe
+Hänsel und Gretel verliefen sich im Wald.
+Es war so finster und auch so bitter kalt.
+Sie kamen an ein Häuschen von Pfefferkuchen fein.
+Wer mag der Herr wohl von diesem Häuschen sein?
+
+2. Strophe
+Hu, hu, da schaut eine alte Hexe raus!
+Lockte die Kinder ins Pfefferkuchenhaus.
+Sie stellte sich gar freundlich, o Hänsel, welche Not!
+Ihn wollt’ sie braten im Ofen braun wie Brot.
+
+Doch als die Hexe zum Ofen schaut hinein,
+ward sie gestoßen von unserm Gretelein.
+Die Hexe musste braten, die Kinder geh’n nach Haus.
+Nun ist das Märchen von Hans und Gretel aus.
+
+Doch als die Hexe zum Ofen schaut hinein,
+ward sie gestoßen von unserm Gretelein.
+Die Hexe musste braten, die Kinder geh’n nach Haus.
+Nun ist das Märchen von Hans und Gretel aus.
+") => "Your reading time is 1 minute(s) 0.6 second(s)"
 ```
 
 _Encode each example as a test. You can add to the above list as you go._
@@ -33,14 +73,3 @@ _Encode each example as a test. You can add to the above list as you go._
 ## 4. Implement the Behaviour
 
 _After each test you write, follow the test-driving process of red, green, refactor to implement the behaviour._
-
-
-<!-- BEGIN GENERATED SECTION DO NOT EDIT -->
-
----
-
-**How was this resource?**  
-[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/golden-square&prefill_File=resources/single_method_recipe_template.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/golden-square&prefill_File=resources/single_method_recipe_template.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/golden-square&prefill_File=resources/single_method_recipe_template.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/golden-square&prefill_File=resources/single_method_recipe_template.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/golden-square&prefill_File=resources/single_method_recipe_template.md&prefill_Sentiment=😀)  
-Click an emoji to tell us.
-
-<!-- END GENERATED SECTION DO NOT EDIT -->
