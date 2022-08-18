@@ -1,7 +1,9 @@
 class DiaryEntry
+  
   def initialize(title, contents) # title, contents are strings
     @title = title
     @contents = contents
+    @count = 0
   end
 
   def title
@@ -35,7 +37,12 @@ class DiaryEntry
     # what has already been read, until the contents is fully read.
     # The next call after that it should restart from the beginning.
     array = @contents.split
-    words = wpm * minutes
-    array[0, words].join(" ")
+    words = wpm * minutes 
+    if @count > array.length
+      @count = 0
+    end
+    words_read = array[@count,@count + words].join(" ")
+    @count += words
+    return words_read
  end
 end
