@@ -12,4 +12,10 @@ RSpec.describe DiaryEntry do
     result = entry.contents
     expect(result).to eq "First week"
   end
+
+  it "returns the number of words" do
+    entry = DiaryEntry.new("Makers Academy", "First week")
+    result = entry.count_words
+    expect(result).to eq 2
+  end
 end

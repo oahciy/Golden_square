@@ -11,11 +11,13 @@ class DiaryEntry
 
   def contents
     # Returns the contents as a string
+    return @contents
   end
 
-#  def count_words
+  def count_words
     # Returns the number of words in the contents as an integer
-#  end
+    
+  end
 
 #  def reading_time(wpm) # wpm is an integer representing the number of words the
                         # user can read per minute
