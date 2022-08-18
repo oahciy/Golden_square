@@ -37,5 +37,12 @@ RSpec.describe DiaryEntry do
     text_2 = entry.reading_chunk(2,5)
     expect(text_2).to eq "eiusmod tempor incididunt ut labore et dolore magna aliqua."
   end
-
+  it "returns to the beginning" do
+    entry = DiaryEntry.new("Makers Academy", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+    text = entry.reading_chunk(2,5)
+    text_2 = entry.reading_chunk(2,5)
+    text_3 = entry.reading_chunk(2,5)
+    expect(text_3).to eq "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+  end
 end
