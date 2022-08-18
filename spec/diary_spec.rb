@@ -18,4 +18,9 @@ RSpec.describe DiaryEntry do
     result = entry.count_words
     expect(result).to eq 2
   end
+
+  it "returns the reading time" do
+    entry = DiaryEntry.new("Makers Academy", "First week")
+    expect(entry.reading_time(2)).to eq 1
+  end
 end
