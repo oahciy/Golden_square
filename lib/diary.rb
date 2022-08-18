@@ -6,11 +6,12 @@ class DiaryEntry
 
   def title
     # Returns the title as a string
+    return @title
   end
 
-#  def contents
+  def contents
     # Returns the contents as a string
-#  end
+  end
 
 #  def count_words
     # Returns the number of words in the contents as an integer
