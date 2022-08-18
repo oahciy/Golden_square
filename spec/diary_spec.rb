@@ -23,4 +23,11 @@ RSpec.describe DiaryEntry do
     entry = DiaryEntry.new("Makers Academy", "First week")
     expect(entry.reading_time(2)).to eq 1
   end
+
+  it "returns the string the user has read" do
+    entry = DiaryEntry.new("Makers Academy", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+    text = entry.reading_chunk(2,5)
+    expect(text).to eq "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+  end
 end
