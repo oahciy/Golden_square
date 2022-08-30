@@ -8,8 +8,8 @@ RSpec.describe DiaryEntry do
   end
 
   it "count words in the contents" do
-    diary_entry = DiaryEntry.new("title", "contents1, contents2")
-    expect(diary_entry.count_words).to eq 2
+    diary_entry = DiaryEntry.new("title", "contents1 " * 100)
+    expect(diary_entry.count_words).to eq 100
   end
   
   it "Returns an integer representing an estimate of the reading time in minutes for the contents at the given wpm" do
