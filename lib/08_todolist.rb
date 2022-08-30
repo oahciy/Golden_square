@@ -10,15 +10,16 @@ class TodoList
 
   def incomplete
     # Returns all non-done todos
-    @todolist.select { |todo| todo.done? == false}
+    @todolist.select { |todo| !todo.done?}
   end
 
   def complete
     # Returns all complete todos
-    @todolist.select { |todo| todo.done? == true}
+    @todolist.select { |todo| todo.done?}
   end
 
   def give_up!
     # Marks all todos as complete
+    @todolist.each(&:mark_done!)
   end
 end
