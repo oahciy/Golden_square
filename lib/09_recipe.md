@@ -139,23 +139,23 @@ expect(diary.contacts).to eq ["07422586652"]
 #TodoList & Todo
 #test 1 incomplete
 todolist = TodoList.new
-todo_1 = Todo("walk the dog")
-todo_2 = Todo("buy groceries")
+todo_1 = Todo.new("walk the dog")
+todo_2 = Todo.new("buy groceries")
 todolist.add(todo_1)
 todolist.add(todo_2)
 expect(todolist.incomplete).to eq [todo_1, todo_2]
 #test 2 complete
 todolist = TodoList.new
-todo_1 = Todo("walk the dog")
-todo_2 = Todo("buy groceries")
+todo_1 = Todo.new("walk the dog")
+todo_2 = Todo.new("buy groceries")
 todolist.add(todo_1)
 todolist.add(todo_2)
 todo_1.mark_done!
 expect(todolist.complete).to eq [todo_1]
 #test 3 give_up!
 todolist = TodoList.new
-todo_1 = Todo("walk the dog")
-todo_2 = Todo("buy groceries")
+todo_1 = Todo.new("walk the dog")
+todo_2 = Todo.new("buy groceries")
 todolist.add(todo_1)
 todolist.add(todo_2)
 todolist.give_up!

@@ -8,11 +8,14 @@ class TodoList
   end
 
   def incomplete
+    @todolist.select {|todo| !todo.done?}
   end
 
   def complete
+    @todolist.select {|todo| todo.done?}
   end
 
   def give_up!
+    @todolist.each(&:mark_done!)
   end
 end
